@@ -8,8 +8,7 @@ const names = ['Daria', 'Olga', 'Weronika', 'Tatiana', 'Wiktoria', 'Nina', 'Klau
 function randomTimes(){
     const random = names[Math.floor(Math.random()*names.length)];
     const randomText = text[Math.floor(Math.random()*text.length)];
-    div.textContent = randomText;
-    div.textContent += random;
+    div.textContent = `${randomText} ${random}`;
     div.style.fontSize = "30px"
     div.style.textAlign = 'center'
 }
