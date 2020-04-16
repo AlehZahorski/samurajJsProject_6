@@ -1,7 +1,11 @@
 const btn = document.querySelector('button');
 const div = document.querySelector('div');
 
-const text = ['I think what better name for your child will - ', 'Yes! its really good choice for your child, she\'s will be name - ', '100%, that will good name ']
+const text = [
+    'I think what better name for your child will - ',
+    'Yes! its really good choice for your child, she\'s will be name - ', 
+    '100%, that will good name '
+]
 const names = ['Daria', 'Olga', 'Weronika', 'Tatiana', 'Wiktoria', 'Nina', 'Klaudia']
 
 
@@ -13,9 +17,6 @@ function randomTimes(){
     div.style.textAlign = 'center'
 }
 
-function randomName(){
-
-}
 
 
 btn.addEventListener('click', randomTimes);
