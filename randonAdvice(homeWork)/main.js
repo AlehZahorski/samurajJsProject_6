@@ -46,3 +46,6 @@ btnShowPossibility.addEventListener('click', showPossibility);
 
 
 //splice(index array) - remove elements from table
+
+//random from 5 to 7 Math.random() * (7-5) + 5
+// math.random() * (max - min) + min
