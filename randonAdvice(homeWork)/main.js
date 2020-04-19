@@ -5,18 +5,21 @@ const btnShowAdvice = document.getElementById('btnShowAdvice');
 const btnShowPossibility = document.getElementById('btnShowPossibility');
 const div = document.querySelector('div');
 const ArrayData = ['Walcz!', 'Przemysl to jeszcze raz..'];
+div.style.fontSize = "25px";
 
 const AddNewAdvice = () => {
     event.preventDefault();
     const newAdvice = input.value;
-    ArrayData.push(newAdvice);
+    ArrayData.push(`${newAdvice}, `);
     input.value = "";
+    alert(`Dodales nowa opcje: "${newAdvice}"`);
 }
 const removeAllData = (e) => {
     e.preventDefault();
     for(let i = 0; i <= ArrayData.length; i++){
         ArrayData.splice(i);
     }
+    div.textContent = ""
 }
 const showAdvice = () => {
     event.preventDefault();
@@ -26,7 +29,7 @@ const showAdvice = () => {
 
 const showPossibility = () => {
     event.preventDefault();
-    div.textContent = ArrayData + '\n';
+    div.textContent = ` "${ArrayData}" \n`;
 }
 
 
